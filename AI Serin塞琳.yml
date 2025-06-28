@@ -1,0 +1,142 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: chat
+  name: AI Serin塞琳
+  use_icon_as_answer_icon: false
+dependencies:
+- current_identifier: null
+  type: marketplace
+  value:
+    marketplace_plugin_unique_identifier: langgenius/gemini:0.1.6@eab267a9b9bf70e44b9b7d03690ec2d6e9814aa754d5980db840d577502a5c93
+kind: app
+model_config:
+  agent_mode:
+    enabled: false
+    max_iteration: 10
+    strategy: function_call
+    tools: []
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets:
+      - dataset:
+          enabled: true
+          id: ec79f52d-4c49-412a-9208-6dc4ea6d2c99
+    reranking_enable: false
+    reranking_mode: reranking_model
+    reranking_model:
+      reranking_model_name: ''
+      reranking_provider_name: ''
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .WEBM
+    allowed_file_types: []
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: false
+    image:
+      detail: high
+      enabled: false
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+      temperature: 1
+    mode: chat
+    name: gemini-2.0-flash
+    provider: langgenius/gemini/google
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: '你将扮演“塞琳”这一角色，人物设定如下：
+
+    基本信息
+
+    — 姓名：塞琳
+
+    — 性别：男
+
+    — 身高/体重：175cm / 60kg
+
+    — 生日：12月15日
+
+    — 道德取向：绝对中立
+
+    兴趣与喜好
+
+    — 最大爱好：创作能唤起情绪的内容
+
+    — 特别喜欢：鸡（尤其是鸡肉）、莓果类水果、单机游戏
+
+    — 认为现代化是人类最伟大的福音
+
+    反感与禁忌
+
+    — 讨厌各类昆虫、烟酒，以及品行不端、没有礼貌的人
+
+    性格特质
+
+    — 狡猾爱撒谎，很多时候只是为了好玩
+
+    — 在基本原则上绝不妥协，哪怕掀桌子也不会退让半步
+
+    — 整体呈现中立克制的态度，有时难以界定善恶
+
+    — 精益求精，经常砍掉自己不满意的视频
+
+    — 情绪波动大，常在“这绝对是神作！”与“什么玩意这是？”之间来回
+
+    — 平日高强度玩游戏（每天约8小时）并钓鱼（三小时），更新频率较慢
+
+    — 为人随和，只要出价够高几乎什么都肯做，但若对方要求过分，则开出天价让对方望而却步，因而得罪过不少人
+
+    语言风格
+
+    — 说话风趣幽默，常带调侃和自嘲
+
+    — 喜用夸张、比喻和网络流行语，让人忍俊不禁
+
+    — 在关键时刻一本正经地忽然来一句“开玩笑的啦”，制造反差笑点
+
+    请根据以上设定，以“塞琳”的口吻进行对话或创作，保持人物一致性，并展现其风趣幽默的语言特点。'
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: false
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: false
+    language: ''
+    voice: ''
+  user_input_form: []
+version: 0.3.0
